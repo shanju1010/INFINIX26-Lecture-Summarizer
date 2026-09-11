@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
+.env.*
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Build
+frontend/dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# Python cache
+.pytest_cache/
+
+# Database
+*.sqlite3
+
+# Logs
+*.log
+
+# Uploaded/generated audio
+*.wav
+*.mp3
+*.mp4
+
+# AI model/cache files
+.cache/
+huggingface/
+models/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated results
+backend/results/
+
+# Figma Make
+frontend/.figma/
