@@ -157,7 +157,7 @@ export default function ResultsPage() {
       if (jobId) {
         try {
           const storedAuth =
-            localStorage.getItem("audiomind_auth");
+            localStorage.getItem("LectureIQ_auth");
 
           let email = "";
 

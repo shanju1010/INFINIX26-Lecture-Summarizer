@@ -32,14 +32,14 @@ export default function SettingsPage() {
   const [saved, setSaved] = useState(false);
 
   const handleSave = () => {
-    // Keep AudioMind permanently in light mode.
-    document.documentElement.classList.remove("dark", "audiomind-dark");
+    // Keep LectureIQ permanently in light mode.
+    document.documentElement.classList.remove("dark", "LectureIQ-dark");
     document.documentElement.style.colorScheme = "light";
     document.body.style.colorScheme = "light";
 
-    localStorage.removeItem("audiomind_theme");
+    localStorage.removeItem("LectureIQ_theme");
     localStorage.setItem(
-      "audiomind_preferences",
+      "LectureIQ_preferences",
       JSON.stringify({
         language: lang,
         summaryLength: summaryLen,
@@ -80,8 +80,8 @@ export default function SettingsPage() {
             <Link
               to="/"
               onClick={() => {
-                document.documentElement.classList.remove("dark", "audiomind-dark");
-                localStorage.removeItem("audiomind_theme");
+                document.documentElement.classList.remove("dark", "LectureIQ-dark");
+                localStorage.removeItem("LectureIQ_theme");
               }}
               className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-[13px] font-medium text-red-500 hover:bg-red-50 transition-all"
             >
@@ -102,7 +102,7 @@ export default function SettingsPage() {
                 Preferences
               </h2>
               <p className="text-[11px] text-slate-400 mt-0.5">
-                Configure how AudioMind AI processes and presents your lectures.
+                Configure how LectureIQ processes and presents your lectures.
               </p>
             </div>
 

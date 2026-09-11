@@ -74,7 +74,7 @@ function formatDate(value?: string) {
 
 function getCurrentUserEmail() {
   try {
-    const storedAuth = localStorage.getItem("audiomind_auth");
+    const storedAuth = localStorage.getItem("LectureIQ_auth");
 
     if (!storedAuth) {
       return "";

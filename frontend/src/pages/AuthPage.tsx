@@ -21,8 +21,8 @@ type StoredUser = {
   role: Role;
 };
 
-const USERS_KEY = "audiomind_users";
-const AUTH_KEY = "audiomind_auth";
+const USERS_KEY = "LectureIQ_users";
+const AUTH_KEY = "LectureIQ_auth";
 
 function getUsers(): StoredUser[] {
   try {
@@ -203,7 +203,7 @@ export default function AuthPage({
             className="text-[15px] font-semibold text-white"
             style={{ fontFamily: "Outfit, sans-serif" }}
           >
-            AudioMind AI
+            LectureIQ
           </span>
         </Link>
 
@@ -247,7 +247,7 @@ export default function AuthPage({
         </div>
 
         <p className="text-[11px] text-blue-200 relative z-10">
-          © 2026 AudioMind AI
+          © 2026 LectureIQ
         </p>
       </div>
 
@@ -274,7 +274,7 @@ export default function AuthPage({
                 className="text-[14px] font-semibold"
                 style={{ fontFamily: "Outfit, sans-serif" }}
               >
-                AudioMind{" "}
+                LectureIQ{" "}
                 <span className="text-[#5B6EF8]">
                   AI
                 </span>
@@ -315,7 +315,7 @@ export default function AuthPage({
 
           <p className="text-[13px] text-slate-500 mb-6">
             {mode === "login"
-              ? "Sign in to continue to AudioMind AI"
+              ? "Sign in to continue to LectureIQ"
               : "Create your account to start analyzing lectures"}
           </p>
 

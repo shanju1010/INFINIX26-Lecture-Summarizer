@@ -1,6 +1,6 @@
 import { Navigate, Outlet, useLocation } from "react-router-dom";
 
-const AUTH_KEY = "audiomind_auth";
+const AUTH_KEY = "LectureIQ_auth";
 
 type AuthData = {
   isLoggedIn?: boolean;

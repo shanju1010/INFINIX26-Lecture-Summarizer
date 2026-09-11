@@ -126,7 +126,7 @@ export default function LandingPage() {
   // Uploading/recording lecture content requires authentication.
   // Send unauthenticated users to Login first.
   const handleProtectedNavigation = (path: string) => {
-    const auth = localStorage.getItem("audiomind_auth");
+    const auth = localStorage.getItem("LectureIQ_auth");
 
     if (auth) {
       try {
@@ -160,7 +160,7 @@ export default function LandingPage() {
               className="text-[15px] font-semibold"
               style={{ fontFamily: "Outfit, sans-serif" }}
             >
-              AudioMind <span className="text-[#5B6EF8]">AI</span>
+              LectureIQ <span className="text-[#5B6EF8]">AI</span>
             </span>
           </Link>
 
@@ -260,7 +260,7 @@ export default function LandingPage() {
             </h1>
 
             <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mx-auto">
-              AudioMind AI converts lecture recordings into timestamped
+              LectureIQ converts lecture recordings into timestamped
               transcripts, identifies speakers, and generates structured
               notes, key takeaways, and exam-focused insights.
             </p>
@@ -297,7 +297,7 @@ export default function LandingPage() {
                 <span className="w-3 h-3 rounded-full bg-amber-400" />
                 <span className="w-3 h-3 rounded-full bg-emerald-400" />
                 <span className="ml-4 text-[12px] text-slate-400 font-mono">
-                  AudioMind AI — Lecture Analysis
+                  LectureIQ — Lecture Analysis
                 </span>
                 <div className="ml-auto flex items-center gap-2">
                   <span className="text-[11px] bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-semibold">
@@ -478,12 +478,12 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Why AudioMind */}
+      {/* Why LectureIQ */}
       <section className="py-24 px-4 bg-slate-50/60">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <p className="text-[12px] font-semibold text-[#5B6EF8] uppercase tracking-wider mb-3">
-              Why AudioMind AI
+              Why LectureIQ
             </p>
             <h2
               className="text-4xl font-bold text-slate-900"
@@ -520,7 +520,7 @@ export default function LandingPage() {
 
             <div className="bg-white rounded-2xl border border-[#5B6EF8]/15 p-7 shadow-sm">
               <p className="text-[15px] font-semibold text-slate-900 mb-5">
-                With AudioMind AI
+                With LectureIQ
               </p>
               <div className="space-y-4">
                 {[
@@ -699,7 +699,7 @@ export default function LandingPage() {
               </h2>
 
               <p className="text-blue-100 mb-8">
-                Upload a lecture, let AudioMind AI process it, and get
+                Upload a lecture, let LectureIQ process it, and get
                 structured learning material in one place.
               </p>
 
@@ -735,7 +735,7 @@ export default function LandingPage() {
                 className="text-[14px] font-semibold text-slate-700"
                 style={{ fontFamily: "Outfit, sans-serif" }}
               >
-                AudioMind AI
+                LectureIQ
               </span>
             </Link>
 
@@ -779,7 +779,7 @@ export default function LandingPage() {
           </div>
 
           <p className="text-center text-[12px] text-slate-400 mt-8">
-            © 2026 AudioMind AI. Built for intelligent lecture understanding.
+            © 2026 LectureIQ. Built for intelligent lecture understanding.
           </p>
         </div>
       </footer>

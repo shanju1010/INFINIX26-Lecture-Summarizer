@@ -27,7 +27,7 @@ export default function Topbar({ onMenuToggle, title }: TopbarProps) {
 
   const getAuthUser = (): AuthUser => {
     try {
-      const stored = localStorage.getItem("audiomind_auth");
+      const stored = localStorage.getItem("LectureIQ_auth");
       if (!stored) return {};
       return JSON.parse(stored) as AuthUser;
     } catch {
@@ -49,7 +49,7 @@ export default function Topbar({ onMenuToggle, title }: TopbarProps) {
   const unreadCount = notifications.filter((n) => n.unread).length;
 
   const handleSignOut = () => {
-    localStorage.removeItem("audiomind_auth");
+    localStorage.removeItem("LectureIQ_auth");
     setProfileOpen(false);
     setNotifOpen(false);
     navigate("/");

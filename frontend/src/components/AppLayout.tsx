@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
 
-const THEME_KEY = "audiomind_theme";
+const THEME_KEY = "LectureIQ_theme";
 
 export default function AppLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -18,13 +18,13 @@ export default function AppLayout() {
 
     // Keep AppLayout in sync when Settings changes the theme.
     window.addEventListener("storage", syncTheme);
-    window.addEventListener("audiomind-theme-change", syncTheme);
+    window.addEventListener("LectureIQ-theme-change", syncTheme);
 
     syncTheme();
 
     return () => {
       window.removeEventListener("storage", syncTheme);
-      window.removeEventListener("audiomind-theme-change", syncTheme);
+      window.removeEventListener("LectureIQ-theme-change", syncTheme);
     };
   }, []);
 

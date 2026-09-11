@@ -31,7 +31,7 @@ function formatTime(s: number) {
 
 function getAuthEmail() {
   try {
-    const stored = localStorage.getItem("audiomind_auth");
+    const stored = localStorage.getItem("LectureIQ_auth");
 
     if (!stored) {
       return "";
@@ -257,17 +257,17 @@ export default function RecordPage() {
         // for the Process Recording button.
         (
           window as Window & {
-            __audioMindRecordedBlob?: Blob;
-            __audioMindRecordedFilename?: string;
+            __LectureIQRecordedBlob?: Blob;
+            __LectureIQRecordedFilename?: string;
           }
-        ).__audioMindRecordedBlob = blob;
+        ).__LectureIQRecordedBlob = blob;
 
         (
           window as Window & {
-            __audioMindRecordedBlob?: Blob;
-            __audioMindRecordedFilename?: string;
+            __LectureIQRecordedBlob?: Blob;
+            __LectureIQRecordedFilename?: string;
           }
-        ).__audioMindRecordedFilename =
+        ).__LectureIQRecordedFilename =
           `recording.${extension}`;
       };
 
@@ -396,18 +396,18 @@ export default function RecordPage() {
 
     (
       window as Window & {
-        __audioMindRecordedBlob?: Blob;
-        __audioMindRecordedFilename?: string;
+        __LectureIQRecordedBlob?: Blob;
+        __LectureIQRecordedFilename?: string;
       }
-    ).__audioMindRecordedBlob =
+    ).__LectureIQRecordedBlob =
       undefined;
 
     (
       window as Window & {
-        __audioMindRecordedBlob?: Blob;
-        __audioMindRecordedFilename?: string;
+        __LectureIQRecordedBlob?: Blob;
+        __LectureIQRecordedFilename?: string;
       }
-    ).__audioMindRecordedFilename =
+    ).__LectureIQRecordedFilename =
       undefined;
 
     setStage("ready");
@@ -420,17 +420,17 @@ export default function RecordPage() {
   const handleProcess = async () => {
     const recordedBlob = (
       window as Window & {
-        __audioMindRecordedBlob?: Blob;
-        __audioMindRecordedFilename?: string;
+        __LectureIQRecordedBlob?: Blob;
+        __LectureIQRecordedFilename?: string;
       }
-    ).__audioMindRecordedBlob;
+    ).__LectureIQRecordedBlob;
 
     const recordedFilename = (
       window as Window & {
-        __audioMindRecordedBlob?: Blob;
-        __audioMindRecordedFilename?: string;
+        __LectureIQRecordedBlob?: Blob;
+        __LectureIQRecordedFilename?: string;
       }
-    ).__audioMindRecordedFilename;
+    ).__LectureIQRecordedFilename;
 
     if (!recordedBlob || recordedBlob.size === 0) {
       setError(

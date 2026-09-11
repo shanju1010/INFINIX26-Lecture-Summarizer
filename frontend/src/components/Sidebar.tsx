@@ -88,7 +88,7 @@ export default function Sidebar({
               className="font-semibold text-slate-900 text-[15px]"
               style={{ fontFamily: "Outfit, sans-serif" }}
             >
-              AudioMind{" "}
+              LectureIQ{" "}
               <span className="text-[#5B6EF8]">
                 AI
               </span>
